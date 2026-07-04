@@ -1,19 +1,22 @@
-# Kiro Agent Desk
+﻿# Kiro Agent Desk
 
-Kiro Agent Desk is a browser-playable spec-driven planning assistant. It turns a messy project request into structured requirements, design decisions, task steps, risk flags, and a demo script.
+Kiro Agent Desk is a browser-playable operations desk. It turns a messy client or project request into extracted fields, missing-info checks, quote logic, timeline, execution tasks, client reply draft, approval state, audit log, and exportable handoff files.
 
-## Run
+Live demo: https://d0ubl3-a.github.io/kiro-agent-desk/
+Repository: https://github.com/D0ubl3-A/kiro-agent-desk
+
+## Run Locally
 
 Open `index.html` in a browser.
 
-## Demo
+## Demo Path
 
-1. Click `Load Sample`.
-2. Click `Run Agent Pass`.
-3. Review each generated panel.
-4. Use the result as a project handoff or submission plan.
+1. Click `Load Request` or keep the preloaded sample.
+2. Click `Run Desk`.
+3. Review Intake, Proposal, Tasks, Approval, and Audit tabs.
+4. Approve or reject the draft.
+5. Export Markdown or JSON handoff.
 
 ## Buildfest Notes
 
-The `.kiro/` folder is included because Kiro Buildfest requires it to be committed. Before submission, open this project in Kiro and let Kiro inspect or refine the specs so the "How we used Kiro" statement is truthful.
-
+The `.kiro/` folder is committed and includes specs, design, tasks, steering, agent behavior, and a pre-submit hook. Before claiming final Kiro usage in a judged submission, open this project in Kiro and let Kiro inspect or refine the workflow so the statement is truthful.
