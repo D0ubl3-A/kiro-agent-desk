@@ -1,20 +1,18 @@
-# The Brain Code Builder
-
-The Brain Code Builder combines The Brain mission-control skill with the Kiro code-builder submission app.
+# The Brain Project Builder
 
 Live demo: https://d0ubl3-a.github.io/kiro-agent-desk/
 Repository: https://github.com/D0ubl3-A/kiro-agent-desk
 
-## What It Does
+This is the non-mock version. It does not pretend to call a hidden model or run fake remote agents. It creates real project files in the browser, verifies required files, and writes them to a user-selected folder when the browser supports the File System Access API.
 
-- Starts in waiting mode; agents do not run until `Run Brain` is clicked.
-- Accepts natural-language mission refinements through a Brain chat box.
-- Creates bounded logical agent tasks.
-- Simulates execution when no live model key is configured.
-- Verifies each agent output before synthesis.
-- Generates a working browser app code pack.
-- Exports the generated files as JSON.
+## Real Capabilities
 
-## Hackathon Positioning
+- Builds `index.html`, `README.md`, `.kiro` specs, `.kiro` agent notes, and `project.json`.
+- Verifies required files before marking the pack ready.
+- Writes the generated project to disk through the browser folder picker when available.
+- Falls back to downloading real files individually.
+- Avoids hardcoded secrets and fake execution claims.
 
-This is now closer to The Brain: one mission controller coordinating agents toward a code-producing result. The remaining Kiro-specific proof is to open/refine it in Kiro and truthfully update the final submission note.
+## Limit
+
+This static GitHub Pages app does not use OpenAI, Qwen, or any paid API unless a secure backend is added later.
