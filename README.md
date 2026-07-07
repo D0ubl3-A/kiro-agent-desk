@@ -1,18 +1,27 @@
-# The Brain Project Builder
+﻿# The Brain Project Builder
 
 Live demo: https://d0ubl3-a.github.io/kiro-agent-desk/
 Repository: https://github.com/D0ubl3-A/kiro-agent-desk
 
-This is the non-mock version. It does not pretend to call a hidden model or run fake remote agents. It creates real project files in the browser, verifies required files, and writes them to a user-selected folder when the browser supports the File System Access API.
+This version fixes the pasted-output problem. When the mission is `build an online rap magazine`, the builder now generates a real multi-file rap magazine app instead of a generic placeholder.
+
+## Rap Magazine Output
+
+- `index.html`
+- `styles.css`
+- `app.js`
+- `content/articles.json`
+- `README.md`
+- `.kiro/specs/requirements.md`
+- `.kiro/specs/design.md`
+- `.kiro/specs/tasks.md`
+- `.kiro/agents/editorial-agent.md`
+- `project.json`
 
 ## Real Capabilities
 
-- Builds `index.html`, `README.md`, `.kiro` specs, `.kiro` agent notes, and `project.json`.
-- Verifies required files before marking the pack ready.
-- Writes the generated project to disk through the browser folder picker when available.
-- Falls back to downloading real files individually.
-- Avoids hardcoded secrets and fake execution claims.
-
-## Limit
-
-This static GitHub Pages app does not use OpenAI, Qwen, or any paid API unless a secure backend is added later.
+- Search/filter editorial coverage.
+- Store artist submissions with localStorage.
+- Export pitches as JSON.
+- Write generated files to a selected folder when the browser allows it.
+- Download real files individually as fallback.
