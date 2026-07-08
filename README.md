@@ -38,3 +38,20 @@ The loop is engineered to prevent mock-only progress: each next task must produc
 - Export pitches as JSON.
 - Write generated files to a selected folder when the browser allows it.
 - Download generated files individually as fallback.
+
+## Smoke Testing and Button Demo
+
+Run the full smoke suite and button capture in one command:
+
+npm run smoke
+
+Outputs produced in rtifacts/:
+- rtifacts/playwright/ for screenshots, failures, and videos from smoke checks.
+- rtifacts/button-demo/ for per-button screenshots, demo-log.json, and the recorded video (last recording in folder).
+
+The button capture script exercises every control with a visible result state:
+- Chat button: updates mission and confirms mission update in chat.
+- Build button: generates files and passes checks.
+- Write Folder: validates fallback message when picker is unavailable.
+- Download Files: starts multi-file download flow and posts completion in chat.
+

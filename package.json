@@ -1,0 +1,27 @@
+{
+  "name": "kiro-agent-desk",
+  "version": "1.0.0",
+  "description": "Live demo: https://d0ubl3-a.github.io/kiro-agent-desk/ Repository: https://github.com/D0ubl3-A/kiro-agent-desk",
+  "main": "builder.js",
+  "scripts": {
+    "test": "echo \"No-op: use npm run smoke\" && exit 0",
+    "smoke": "npm run smoke:check && npm run smoke:buttons",
+    "smoke:check": "playwright test tests/smoke-buttons.spec.js",
+    "smoke:buttons": "node scripts/demo-buttons.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/D0ubl3-A/kiro-agent-desk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/D0ubl3-A/kiro-agent-desk/issues"
+  },
+  "homepage": "https://github.com/D0ubl3-A/kiro-agent-desk#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1"
+  }
+}
