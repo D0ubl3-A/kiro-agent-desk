@@ -3,30 +3,30 @@
 Automation ID: `qwen-cloud-hackathon-winning-quality-loop`  
 Current run date basis: **July 8, 2026 (PDT)**
 
-## Run 2 (2026-07-08 00:38 PDT)
+## Run 3 (2026-07-08 00:50 PDT)
 
 ### 1) Qwen Cloud Global AI Hackathon
 - Deadline: July 9, 2026 at 2:00 PM PDT
-- Time remaining: **1 day, 13 hours, 21 minutes**
+- Time remaining: **1 day, 13 hours, 10 minutes**
 - Status: **ACTIVE**
 - Track: **Track 4: Autopilot Agent**
-- Highest-leverage next task: **Ship one verifiable end-to-end flow and capture sponsor-proof logs**
-  - Submit a messy business request through the live flow.
-  - Show inference step, structured extraction, approval checkpoint, and generated action.
-  - Save deployment screenshot + API log pair showing model handoff and final decision.
+- Highest-leverage next task: **Finish submission packet and lock proof-ready evidence in one recording**
+  - Use [`qwen-cloud-first-track-ready-package.md`](qwen-cloud-first-track-ready-package.md) for submission order.
+  - Attach one end-to-end flow run with timestamps from approval checkpoint to action log.
+  - Capture and upload sponsor-proof screenshots for Qwen/Alibaba config and model trace.
 
 #### Winning-quality checklist
 
-- Working demo path: **PENDING**
-- Sponsor-tech proof: **PENDING**
-- Repo or technical proof: **PARTIAL**
-- Deployment/log/screenshots: **MISSING**
-- Architecture: **MISSING**
-- Demo video plan: **READY**
-- Devpost/submission text: **PENDING** (ready to finalize once proof is in)
+- Working demo path: **PARTIAL** (text/script ready, execution capture pending)
+- Sponsor-tech proof: **PENDING** (required traces not yet captured)
+- Repo or technical proof: **PARTIAL** (artifacts now documented)
+- Deployment/log/screenshots: **PENDING** (capture required)
+- Architecture: **READY**
+- Demo video plan: **READY** ([qwen-cloud-demo-script.md](qwen-cloud-demo-script.md))
+- Devpost/submission text: **READY** ([qwen-cloud-devpost-draft.md](qwen-cloud-devpost-draft.md))
 - Judging criteria fit: **STRONG**
-- Limitations: **MISSING**
-- Privacy/safety notes: **MISSING**
+- Limitations: **IN DRAFT** ([qwen-cloud-devpost-draft.md](qwen-cloud-devpost-draft.md))
+- Privacy/safety notes: **READY** (drafted in submission copy)
 - Eligibility blockers: **UNKNOWN**
 - Final submit checklist: **BLOCKED**
 
@@ -98,4 +98,3 @@ Current run date basis: **July 8, 2026 (PDT)**
 1. **Qwen** first: closest deadline and strongest sponsor fit.
 2. **Slack** second: reuse the same workflow in a native Slack surface.
 3. **Gemini** third: only move to submission once user and business proof appears.
-

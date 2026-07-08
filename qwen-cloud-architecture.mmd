@@ -1,0 +1,33 @@
+flowchart LR
+    subgraph UserInput["User input"]
+        A["Slack? / Email? / Internal tool"] --> B["Mission intake API endpoint"]
+    end
+
+    subgraph Control["AgentOps Controller"]
+        B --> C["Schema extractor + normalization"]
+        C --> D{"Critical details missing?"}
+        D -- yes --> E["Ask clarifying question"]
+        D -- no --> F["Autopilot planner"]
+        E --> G["Render missing-info card"]
+        F --> H["Action plan + draft response"]
+    end
+
+    subgraph Policy["Policy & approval"]
+        H --> I["Policy/risk checks"]
+        I --> J["Human approval queue"]
+    end
+
+    subgraph Model["Qwen layer (Alibaba Cloud)"]
+        C --> K["Qwen classification + extraction"]
+        F --> K
+        H --> K
+    end
+
+    subgraph Execution["Execution layer"]
+        J --> L["Action executor / outbound integrations"]
+        L --> M["Audit log service"]
+        M --> N["Project evidence store"]
+    end
+
+    M --> O["Dashboard + replay"]
+
